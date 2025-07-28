@@ -77,3 +77,7 @@ Navigate to the Azure portal, find your container app, go to Application->Contai
 - Volume Name: promptfoo-storage
 
 - Mount Path: /home/promptfoo/.poromptfoo
+
+## Eval error
+
+Somtime I got some eval database error. For this I installed promptfoo with docker locally as documented in promptfoo hosting doc and then copied the local .db file to Azure File share. After that it worked.
