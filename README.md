@@ -81,3 +81,15 @@ Navigate to the Azure portal, find your container app, go to Application->Contai
 ## Eval error
 
 Somtime I got some eval database error. For this I installed promptfoo with docker locally as documented in promptfoo hosting doc and then copied the local .db file to Azure File share. After that it worked.
+
+## Sharing url
+
+promptfooconfig.yaml needs to be modified (as documented in promptfoo selfhosting) to share the results to Azure instance and not promptfoo cloud. Added https (instead of http) also
+
+```yaml
+sharing:
+  apiBaseUrl: https://your-url
+  appBaseUrl: https://your-url
+```
+
+## Add app registration to limit access
